@@ -1,26 +1,26 @@
 import java.lang.annotation.*;
 
-// default value
+// default value & single member annotation
 @Retention(RetentionPolicy.RUNTIME)
 @interface MyAnno3
 {
-    String str() default "default something";
+    String str() default "some value here";
 }
 
 // marker annotation
 @Retention(RetentionPolicy.RUNTIME)
 @interface MarkerIt
 {
-    // empty
+    // supposed to be empty
 }
 
+// Documented annotation
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @interface docsAnno
 {
     // String someone() default "docsy";
 }
-
 
 
 @MarkerIt

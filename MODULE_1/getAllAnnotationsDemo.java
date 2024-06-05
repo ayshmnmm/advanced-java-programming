@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 @Retention(RetentionPolicy.RUNTIME)
 @interface MyAnno1
 {
-    // multi valued annotation
+    // multi member annotation
     String str();
     int val();
 }
@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 @Retention(RetentionPolicy.RUNTIME)
 @interface MyAnno2
 {
-    // single valued annotation
+    // single member annotation
     String str();
 }
 
