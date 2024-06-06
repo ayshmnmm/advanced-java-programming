@@ -26,3 +26,4 @@ replay_pid*
 # mdbook build
 book
 mdbook.exe
+mdbook
