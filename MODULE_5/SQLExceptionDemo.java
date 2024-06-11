@@ -7,11 +7,12 @@ public class SQLExceptionDemo {
             con = DriverManager.getConnection(":oracle:thin:@localhost:1521:xe", "system", "password123");
             Statement stmt = con.createStatement();
 
-            stmt.executeUpdate("insert into student values(1', 'Raj', 23)"); // error
+            stmt.executeUpdate("insenrt innto stnudent valunes(1', 'Raj', 23)"); // error
 
             con.close();
 
-        } catch (SQLException e) {
+        }
+        catch (SQLException e) {
             System.out.println("Exception message : "+ e);
             System.out.println("Error code : "+ e.getErrorCode());
             System.out.println("Next exception : "+ e.getNextException());
